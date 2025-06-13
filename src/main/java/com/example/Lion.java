@@ -17,6 +17,13 @@ public class Lion {
     }
 
     Feline feline = new Feline();
+    public Lion(Feline feline){
+        this.feline = feline;
+    }
+    /*private IFeline feline;
+    public Lion(IFeline feline){
+        this.feline = feline;
+    }*/
 
     public int getKittens() {
         return feline.getKittens();
