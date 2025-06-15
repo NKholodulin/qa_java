@@ -1,15 +1,8 @@
 import com.example.Feline;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.mockito.Mock;
-import org.mockito.Mockito;
-import org.mockito.junit.jupiter.MockitoExtension;
 
-import java.util.Collections;
 
-@ExtendWith(MockitoExtension.class)
 public class FelineTest {
 
     @Test
