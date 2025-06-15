@@ -28,23 +28,23 @@ public class FelineTest {
         Assertions.assertEquals(1, felineKittens);
     }
 
-//    @Test
-//    public void getKittensWithParamsFelineTest(){
-//        Feline feline = new Feline();
-//        int felineKittens = feline.getKittens(5);
-//        Assertions.assertEquals(5, felineKittens);
-//    }
-
-    @ParameterizedTest
-   @CsvSource({
-           "1, 1",
-           "999, 999",
-           "0, 0",
-           "-1, -1",
-   })
-    public void getKittensParametrizedFelineTest(int count, int expected) throws Exception {
+    @Test
+    public void getKittensWithParamsFelineTest(){
         Feline feline = new Feline();
-        int actual = feline.getKittens(count);
-        Assertions.assertEquals(expected, actual);
+        int felineKittens = feline.getKittens(5);
+        Assertions.assertEquals(5, felineKittens);
     }
+
+//    @ParameterizedTest
+//   @CsvSource({
+//           "1, 1",
+//           "999, 999",
+//           "0, 0",
+//           "-1, -1",
+//   })
+//    public void getKittensParametrizedFelineTest(int count, int expected) throws Exception {
+//        Feline feline = new Feline();
+//        int actual = feline.getKittens(count);
+//        Assertions.assertEquals(expected, actual);
+//    }
 }
