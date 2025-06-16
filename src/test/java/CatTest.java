@@ -17,9 +17,7 @@ public class CatTest {
 
     @Test
     public void getSoundCatTest(){
-//        Feline feline = new Feline();
         Cat cat = new Cat(feline);
-//        Mockito.when(cat.getSound()).thenReturn("Мяу");
         String catSound = cat.getSound();
         Assertions.assertEquals("Мяу", catSound);
     }
